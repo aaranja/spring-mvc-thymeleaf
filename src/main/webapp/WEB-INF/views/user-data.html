@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="snippet-container">
+    <p>Mostrar nombre</p>
+    <p th:text="*{param.user_name}">Nombre de usuario</p>
+    <p>Mostrar email</p>
+    <p th:text="*{param.email}">Correo electrónico</p>
+</div>
+</body>
+</html>

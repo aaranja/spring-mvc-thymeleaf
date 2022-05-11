@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Spring Thymeleaf</title>
+</head>
+<body>
+<h2>User Form</h2>
+<form action="showdata" method="Get">
+    <label>
+        Enter Username
+        <input type="text" th:field="*{user.user_name}" name="user_name"/>
+    </label><br><br>
+    <label>
+        Enter Email
+        <input type="email" th:field="*{user.email}" name="email"/>
+    </label><br><br>
+    <input type="submit">
+</form>
+</body>
+</html>
